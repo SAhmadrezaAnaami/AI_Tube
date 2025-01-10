@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "ba794bf6-62b1-4b3f-9d0a-3dd64542af15",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27681744"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:8000/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\" : \"ahmad\",\r\n  \"email\" : \"ahmad\",\r\n  \"password\" : \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/register"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\" : \"ahmad\",\r\n  \"password\" : \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/login"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/status"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"searchText\" : \"ویدیو خیلی کوتاه گل و گیاه\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/search"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/search/d056e480-2f45-48c9-a2c3-6f1afd653e32"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/video/download",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"video_id\" : \"JSwVrEqVy4s\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/video/download"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/video/download/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "127.0.0.1:8000/video/6e5fd4b3-3052-4197-8b40-ae617c4fa80b/"
+			},
+			"response": []
+		}
+	]
+}
